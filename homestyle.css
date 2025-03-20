@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(245, 249, 242); /* Light Sage Green */
+  text-align: center;
+}
+
+/* Header and Nav Container */
+header {
+  background-color: #2a5dab; /* Dark Blue */
+  color: white;
+  padding: 20px 40px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+/* Navbar Styling */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section Styling */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.box-container {
+  width: 400px;
+  height: 400px;
+  background-color: #d9e4d0; /* Light Sage Green */
+  border-radius: 25px;
+}
+
+.text-container {
+  max-width: 500px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  color: #3d4b37; /* Dark Sage Green */
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #2a5dab; /* Dark Blue */
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #0c3d91; /* Slightly lighter blue */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .box-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .text-container {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    padding: 40px 10px;
+  }
+
+  .box-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-container h2 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
